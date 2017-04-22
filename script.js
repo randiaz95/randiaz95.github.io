@@ -12,22 +12,20 @@ function cursorAnimation() {
 }
 
 
+$("#demo").jChart({
 
-$(document).ready(function(){
-    columnChart();
-    
-    function columnChart(){
-        var item = $('.chart', '.column-chart').find('.item'),
-        itemWidth = 100 / item.length;
-        item.css('width', itemWidth + '%');
-        
-        $('.column-chart').find('.item-progress').each(function(){
-            var itemProgress = $(this),
-            itemProgressHeight = $(this).parent().height() * ($(this).data('percent') / 100);
-            itemProgress.css('height', itemProgressHeight);
-        });
-    };
+name: "Attributes",
+
+headers: ["Reliability","Sales","Leadership","Quantitative","Communication","Creative"],
+
+values: [250000,478000,88000,429000,423000],
+footers: [100000,200000,300000,400000,500000],
+colors: ["#1000ff","#006eff","#00b6ff","#00fff6","#00ff90"]
+
 });
+
+
+
 
 <script language=" JavaScript" >
 <!-- 
