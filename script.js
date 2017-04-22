@@ -28,3 +28,12 @@ $(document).ready(function(){
         });
     };
 });
+
+<script language=" JavaScript" >
+<!-- 
+function LoadOnce() 
+{ 
+window.location.reload(); 
+} 
+//-->
+</script>
