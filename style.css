@@ -1,11 +1,11 @@
-body, html{ height: 80%;}
+body, html{ height: 100%;}
 body {
 	padding-top: 50px;
 	background-color: rgb(205,208,211);
 }
 
 #home {
-	height: 80%;
+	height: 100%;
 	/*Horiztonally and vertically centering content"*/
     text-align: center;
     display: flex;
