@@ -1,3 +1,7 @@
+
+#This function transforms 2 points into a line formula. 
+#Note The larger the distance the less useful in application, due to the fact that most real phenomena are non-linear.
+
 points_Line <- function(a,b,c,d)
 {
  slope = (d-b)/(c-a)
