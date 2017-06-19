@@ -5,12 +5,17 @@ points_Line <- function(a,b,c,d)
  yint = b-a*slope
  xint = -1*yint/slope
  
+ print("")
  print("Slope")
  print(slope)
+ print("")
  print("Distance")
  print(distance)
+ print("")
  print("yint")
  print(yint)
+ print("")
  print("xint")
  print(xint)
+ print("")
 }
