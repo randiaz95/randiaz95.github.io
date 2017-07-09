@@ -14,8 +14,6 @@ body {
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-		
-#footer { height:30px; background:#3a3a3a; color:white; }
 
 .img-portfolio {
     margin-bottom: 30px;
