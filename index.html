@@ -3,7 +3,13 @@
 <html>
 <head>
 <style>
-.logo{color:#F7A072;}
+.logo{color:#F7A072;
+position:center;}
+.login{position:center;}
+body{
+text-align:center;
+width:100%;
+}
 </style>
 </head>
 
@@ -12,14 +18,14 @@
 
 <form action="/login.py">
  
-  Account Name:<br><input type="text" name="fname"><br>
+  Account Name:<br><input type="text" name="fname" class="login"><br>
 
-  Password:<br><input type="password" name="lname"><br><br>
+  Password:<br><input type="password" name="lname" class="login"><br><br>
 
-  <input type="submit" value="Submit">
+  <input type="submit" value="Login">
 
 <footer>
-<p class="logo"><p>
+<p class="logo">(786) 804-9239<p>
 </footer>
 
 </html>
