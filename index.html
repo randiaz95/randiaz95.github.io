@@ -14,23 +14,15 @@
 </head>
     
 <body>
-	<canvas data-processing-sources="process.pde">
-	var sunSize=30;
-	draw = function() {
-	    // sun
-	    if(sunSize>10){
-		    sunSize-=1;
-	    }
-	    else{
-	    sunSize+=1;
-	    }
-	    fill(255, 204, 0);
-	    ellipse(500,500,sunSize,sunSize);
-	    fill(76, 168, 67);
-	    rect(0,300,400,100);
-	};
-	</canvas>
-	
+  <canvas data-processing-sources="mixing.pde"></canvas>
+ <script type="application/javascript">     
+	   	 var jsString = "Hello from JavaScript!";
+	    
+      		 var printMessage = function (msg) {
+             	
+	         document.getElementById('msg').innerHTML = "Message: " + msg;
+      		};
+</script>
     <!-- // Intro -->
     <header>
         
