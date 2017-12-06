@@ -16,8 +16,6 @@
 </head>
     
 <body>
-  <canvas data-processing-sources="mixing.pde"></canvas>
-
     <!-- // Intro -->
     <header>
         
@@ -42,88 +40,33 @@
     </header>
     
     <main> 
-        
-        <div class="content-wrap">
-            <img class="profile-img column-narrow" src="images/img.jpg" alt="Randy Diaz">
-            
-            <div class="column-wide">
-              <h1 style = "font-family: 'Lobster', cursive; font-size: 52px;">Randy Diaz</h1>
-              <h2 style = "font-size: 20px;">Junior Data Scientist</h2>
-              <p>As a Data Scientist, I develop algorithms and ETL pipelines for businesses or people that will stand out in the business realm.</p>
-            </div>
-            <br>
-            <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-									<a href="https://www.facebook.com/randy.diaz.3576224"><i class="fa fa-facebook-square fa-2x" style="color:#111344"></i></a>
-                    </li>
-                    <li>
-									<a href="https://www.linkedin.com/in/randy-diaz-34417711b/"><i class="fa fa-linkedin-square fa-2x" style="color:#111344"></i></a>
-					</li>
-                    <li>
-									<a href="https://twitter.com/_randydiaz"><i class="fa fa-twitter-square fa-2x" style="color:#111344"></i></a>
-					</li>			
-								
-            </ul> 
-                                 <canvas id="attChart" style = "height:50%;width:50%;"></canvas>
-            <script>
-            var context = document.getElementById("attChart");
-            var charData = {
-              labels: ["Integrity", "Leadership", "Persistence", "Patience", "Loyalty", "Respectfulness"],
-              datasets: [{
-                label: "2017",
-                backgroundColor: "transparent",
-                borderColor: "rgba(200,0,0,0.6)",
-                fill: false,
-                radius: 6,
-                pointRadius: 6,
-                pointBorderWidth: 3,
-                pointBackgroundColor: "orange",
-                pointBorderColor: "rgba(200,0,0,0.6)",
-                pointHoverRadius: 10,
-                data: [93, 75, 70, 80, 85, 80]
-              }, {
-                label: "2016",
-                backgroundColor: "transparent",
-                borderColor: "rgba(0,0,200,0.6)",
-                fill: false,
-                radius: 6,
-                pointRadius: 6,
-                pointBorderWidth: 3,
-                pointBackgroundColor: "cornflowerblue",
-                pointBorderColor: "rgba(0,0,200,0.6)",
-                pointHoverRadius: 10,
-                data: [84, 65, 60, 70, 70, 75]
-              }]
-            };
-            var chartOptions = {
-              scale: {
-                gridLines: {
-                  color: "black",
-                  lineWidth: 3
-                },
-                angleLines: {
-                  display: false
-                },
-                ticks: {
-                  beginAtZero: true,
-                  min: 0,
-                  max: 100,
-                  stepSize: 20
-                },
-                pointLabels: {
-                  fontSize: 18,
-                  fontColor: "green"
-                }
-              },
+    <div id="particles-jstop">
+            <section class="top">
+                <div class="content-wrap">
+                    <img class="profile-img column-narrow" src="images/img.jpg" alt="Randy Diaz">
+                    
+                    <div class="column-wide">
+                      <h1 style = "font-family: 'Lobster', cursive; font-size: 52px;">Randy Diaz</h1>
+                      <h2 style = "font-size: 20px;">Junior Data Scientist</h2>
+                      <p>As a Data Scientist, I develop algorithms and ETL pipelines for businesses or people that will stand out in the business realm.</p>
+                    </div>
+                    <br>
+                    <ul class="list-unstyled list-inline list-social-icons">
+                            <li>
+        									<a href="https://www.facebook.com/randy.diaz.3576224"><i class="fa fa-facebook-square fa-2x" style="color:#111344"></i></a>
+                            </li>
+                            <li>
+        									<a href="https://www.linkedin.com/in/randy-diaz-34417711b/"><i class="fa fa-linkedin-square fa-2x" style="color:#111344"></i></a>
+        					</li>
+                            <li>
+        									<a href="https://twitter.com/_randydiaz"><i class="fa fa-twitter-square fa-2x" style="color:#111344"></i></a>
+        					</li>			
+        								
+                    </ul> 
+                </div>
+        </section>
+    </div>
 
-            };
-
-            var myChart = new Chart(context, { type: 'radar',
-             data: charData, 
-             options: chartOptions});
-
-            </script>
-        </div>
         <!-- // Work Experience -->
         <section class="work">
             
@@ -157,9 +100,6 @@
                             </li>
                             
                         </ul>
-                    
-                
-            
                 </div>
             
                 <!-- Job Details -->
@@ -217,68 +157,139 @@
             
         </section>
 
-
-        <!-- // Education -->
-        <section class="education">
-
+        <section class="character">
             <div class="content-wrap">
-                <h2>Education</h2>
-                <div class="column-narrow">
-                    
-                    <!-- School details: copy this block to add more schools. -->
-                    <h3>University of Florida</h3>
-                    <p>Bachelors of Arts:&nbsp;<b>Economics</b> 
-                    <br>
-                        Minor:&nbsp;<b>Actuarial Science</b>
-                    </p>
+                    <canvas id="attChart" style="height:50%;width:50%;"></canvas>
+                    <script>
+                    var context = document.getElementById("attChart");
+                    var charData = {
+                      labels: ["Integrity",
+                               "Leadership", 
+                               "Persistence", 
+                               "Patience",
+                                "Loyalty", 
+                                "Respectfulness"],
+                      datasets: [{
+                        label: "2017",
+                        backgroundColor: "transparent",
+                        borderColor: "rgba(200,0,0,0.6)",
+                        fill: false,
+                        radius: 6,
+                        pointRadius: 6,
+                        pointBorderWidth: 3,
+                        pointBackgroundColor: "orange",
+                        pointBorderColor: "rgba(200,0,0,0.6)",
+                        pointHoverRadius: 10,
+                        data: [93, 75, 70, 80, 85, 80]
+                      }, {
+                        label: "2016",
+                        backgroundColor: "transparent",
+                        borderColor: "rgba(0,0,200,0.6)",
+                        fill: false,
+                        radius: 6,
+                        pointRadius: 6,
+                        pointBorderWidth: 3,
+                        pointBackgroundColor: "cornflowerblue",
+                        pointBorderColor: "rgba(0,0,200,0.6)",
+                        pointHoverRadius: 10,
+                        data: [84, 65, 60, 70, 70, 75]
+                      }]
+                    };
+                    var chartOptions = {
+                      scale: {
+                        gridLines: {
+                          color: "black",
+                          lineWidth: 3
+                        },
+                        angleLines: {
+                          display: false
+                        },
+                        ticks: {
+                          beginAtZero: true,
+                          min: 0,
+                          max: 100,
+                          stepSize: 20
+                        },
+                        pointLabels: {
+                          fontSize: 18,
+                          fontColor: "green"
+                        }
+                      },
 
-                </div>
+                    };
 
-                <div class="column-wide">
-                    
-                    <h3>Computer Literacy</h3>
-                    <ul>
-                        <li>Python</li>
-			    <ul>
-				<li>Django Web Applications</li>
-				<li>Pandas</li>
-				<li>SQLAlchemy</li>
-				<li>Sci-kit Learn</li>
-			    </ul>
-			<li>Javascript</li>
-			    <ul>
-				    <li>Chartjs</li>
-				    <li>Numericjs</li>
-				    <li>Processingjs</li>
-			    </ul>
-			<li>C++ &amp; C</li>
-			    <ul>
-				    <li>Eigen Matrix library</li>
-				    <li>Libpq++ PostgreSQL C++ Backend</li>
-				    <li>Rcpp</li>
-			    </ul>
-                        <li>R</li>
-			    <ul>
-				    <li>Fixed Income Portfolio Package</li>
-				    <li>Contingent Asset and Liability Valuation Package</li>
-				    <li>RPostgreSQL</li>
-			    </ul>
-                        <li>SQL (Relational Database Architecture)</li>
-			    <ul>
-				    <li>PostgreSQL</li>
-				    <li>SQLite</li>
-			    </ul>
-                        <li>CSS</li>
-			    <ul><li>Bootstrap C&amp;P</li></ul>
-                    </ul>
-                </div>
+                    var myChart = new Chart(context, { type: 'radar',
+                     data: charData, 
+                     options: chartOptions});
 
+                    </script>
             </div>
-
-
         </section>
+
+    <div id="particles-js">
+            <!-- // Education -->
+            <section class="education">
+                <div class="content-wrap">
+                    <h2>Education</h2>
+                    <div class="column-narrow">
+                        <!-- School details: copy this block to add more schools. -->
+                        <h3>University of Florida</h3>
+                        <p>Bachelors of Arts:&nbsp;<b>Economics</b> 
+                        <br>
+                            Minor:&nbsp;<b>Actuarial Science</b>
+                        </p>
+
+                    </div>
+
+                    <div class="column-wide">
+                        
+                        <h3>Computer Literacy</h3>
+                        <ul>
+                            <li>Python</li>
+    			    <ul>
+    				<li>Django Web Applications</li>
+    				<li>Pandas</li>
+    				<li>SQLAlchemy</li>
+    				<li>Sci-kit Learn</li>
+    			    </ul>
+    			<li>Javascript</li>
+    			    <ul>
+    				    <li>Chartjs</li>
+    				    <li>Numericjs</li>
+    				    <li>Processingjs</li>
+    			    </ul>
+    			<li>C++ &amp; C</li>
+    			    <ul>
+    				    <li>Eigen Matrix library</li>
+    				    <li>Libpq++ PostgreSQL C++ Backend</li>
+    				    <li>Rcpp</li>
+    			    </ul>
+                            <li>R</li>
+    			    <ul>
+    				    <li>Fixed Income Portfolio Package</li>
+    				    <li>Contingent Asset and Liability Valuation Package</li>
+    				    <li>RPostgreSQL</li>
+    			    </ul>
+                            <li>SQL (Relational Database Architecture)</li>
+    			    <ul>
+    				    <li>PostgreSQL</li>
+    				    <li>SQLite</li>
+    			    </ul>
+                            <li>CSS</li>
+    			    <ul><li>Bootstrap C&amp;P</li></ul>
+                        </ul>
+                    </div>
+                    </span>
+                </div>
+            </section>
+        </div>
     </main>
-    
+
+
+
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
     <!-- // Footer & contact info -->
     <footer>
         <div class="content-wrap">
@@ -301,8 +312,7 @@
             </div>
 
             <p>2017 Randy Diaz</p>
-        </div>
+        </div> 
     </footer>
-    
 </body>
 </html>
