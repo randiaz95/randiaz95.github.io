@@ -22,6 +22,10 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
+
+section {
+  align-content: center;
+}
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
@@ -53,24 +57,28 @@ header
 }
 footer {
   background-color:#111344;
-  color: white;
+  color:whitesmoke;
 }
 
 header h1,
 header h2 {
-    color: white;
+    color:whitesmoke;
     margin: 0;
 }
 
-/* Header styles only */
-header {
-  /*text-align: center;*/
-}
+
 .profile-img {
   /*width: 300px;*/
-  border-radius: 40%;
+  border-radius: 45%;
   /*float: left;*/
   /*margin-right: 30px;*/
+}
+
+.top {
+    color:black;
+    position:absolute;
+    z-index:1;
+    width:100%;
 }
 
 /* Footer styles only */
@@ -81,11 +89,47 @@ footer {
 /* Work Experience*/
 .work {
     background:#a12;
-    color:white;
+    position:static;
+    color:whitesmoke;
+}
+
+/* Work Experience*/
+.character {
+    background:white;
+    position:static;
+    color:black;
+}
+
+/* Education */
+.education {
+    color:whitesmoke;
+    position:absolute;
+    z-index:1;
+    width:100%;
+}
+
+/* ---- particles.js  ---- */
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color:black;
+  z-index:-1;
 }
 
 
-/* Education*/
-.education {
-    background: white;
+
+/* ---- particles.js  ---- */
+#particles-jstop{
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-color:white;
+  z-index:-1;
 }
