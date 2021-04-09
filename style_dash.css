@@ -3,3 +3,7 @@
   width: 100% !important;
   left: 0px !important;
 }
+
+.gtitle {
+  word-wrap: break-word;
+}
