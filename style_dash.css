@@ -7,3 +7,7 @@
 .gtitle {
   word-wrap: break-word;
 }
+
+.container_wide {
+  width:90%; 
+}
